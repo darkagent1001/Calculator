@@ -1,22 +1,22 @@
-const buttons = document.querySelectorAll("button");
-const formInput = document.querySelector(".form-input");
+let calButtons = document.querySelectorAll(".cal-button");
+let formInputElement = document.querySelector(".form-input");
 
 
-buttons.forEach(button => {
+calButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
         if(button.classList.contains("AC")){
 
-            formInput.value = "";
+            formInputElement.value = "";
     
         } else if (button.classList.contains("calculate")){
     
-            formInput.value = eval(formInput.value);
+            formInputElement.value = eval(formInputElement.value);
     
         } else {
     
-            formInput.value += button.value;
+            formInputElement.value += button.value;
     
         }
 

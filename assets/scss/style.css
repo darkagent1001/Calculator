@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./remixicon.css";
 @font-face {
   font-family: "Technology";
   src: url("./../fonts/Technology.ttf");
@@ -28,6 +29,9 @@
   }
   .card-content {
     @apply p-4;
+  }
+  .alert {
+    @apply rounded bg-secondary-900 px-4 py-3 font-medium;
   }
 }
 @layer utilities {

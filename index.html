@@ -10,34 +10,42 @@
 <body>
     
     <div class="card dark:bg-secondary-950 shadow-lg dark:shadow-none w-[250px]">
-        <input type="text" class="form-input" disabled>
+        <div class="relative">
+            <input type="text" class="form-input" disabled>
+            <button class="copy text-lg border-0 absolute top-2/4 -translate-y-2/4 end-1 invisible">
+                <i class="ri-clipboard-line"></i>
+            </button>
+        </div>
         <div class="card-content grid grid-cols-4 p-0">
             <div class="bg-dawn-50 -space-x-[1px] -space-y-[1px] dark:bg-secondary-900 grid grid-cols-3 col-span-3">
-                <button class="AC rounded-none px-1 order-1">AC</button>
-                <button class="rounded-none order-1 px-1" value="%">%</button>
-                <button class="rounded-none order-2 px-1" value="^">^</button>
-                <button class="rounded-none order-5 px-1" value="9">9</button>
-                <button class="rounded-none order-4 px-1" value="8">8</button>
-                <button class="rounded-none order-3 px-1" value="7">7</button>
-                <button class="rounded-none order-8 px-1" value="6">6</button>
-                <button class="rounded-none order-7 px-1" value="5">5</button>
-                <button class="rounded-none order-6 px-1" value="4">4</button>
-                <button class="rounded-none order-11 px-1" value="3">3</button>
-                <button class="rounded-none order-10 px-1" value="2">2</button>
-                <button class="rounded-none order-9 px-1" value="1">1</button>
-                <button class="rounded-none order-12 px-1" value=".">.</button>
-                <button class="rounded-none order-[13] col-span-2 px-1" value="0">0</button>
+                <button class="AC cal-button rounded-none px-1 order-1">AC</button>
+                <button class="cal-button rounded-none order-1 px-1" value="%">%</button>
+                <button class="cal-button rounded-none order-2 px-1" value="^">^</button>
+                <button class="cal-button rounded-none order-5 px-1" value="9">9</button>
+                <button class="cal-button rounded-none order-4 px-1" value="8">8</button>
+                <button class="cal-button rounded-none order-3 px-1" value="7">7</button>
+                <button class="cal-button rounded-none order-8 px-1" value="6">6</button>
+                <button class="cal-button rounded-none order-7 px-1" value="5">5</button>
+                <button class="cal-button rounded-none order-6 px-1" value="4">4</button>
+                <button class="cal-button rounded-none order-11 px-1" value="3">3</button>
+                <button class="cal-button rounded-none order-10 px-1" value="2">2</button>
+                <button class="cal-button rounded-none order-9 px-1" value="1">1</button>
+                <button class="cal-button rounded-none order-12 px-1" value=".">.</button>
+                <button class="cal-button rounded-none order-[13] col-span-2 px-1" value="0">0</button>
             </div>
             <div class="grid grid-cols-1 col-span-1 -space-y-[1px]">
-                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="+">+</button>
-                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="-">-</button>
-                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="*">×</button>
-                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="/">÷</button>
-                <button class="calculate rounded-none border border-dawn-100 dark:border-white/3 px-1">=</button>
+                <button class="cal-button rounded-none border border-dawn-100 dark:border-white/3 px-1" value="+">+</button>
+                <button class="cal-button rounded-none border border-dawn-100 dark:border-white/3 px-1" value="-">-</button>
+                <button class="cal-button rounded-none border border-dawn-100 dark:border-white/3 px-1" value="*">×</button>
+                <button class="cal-button rounded-none border border-dawn-100 dark:border-white/3 px-1" value="/">÷</button>
+                <button class="calculate cal-button rounded-none border border-dawn-100 dark:border-white/3 px-1">=</button>
             </div>
         </div>
     </div>
 
-<script src="assets/js/main.js"></script>
+    <div class="alert absolute invisible ms-4 top-[2%]">Copied!</div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/copy.js"></script>
 </body>
 </html>
