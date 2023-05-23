@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <link rel="stylesheet" href="assets/scss/tailwind.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="card dark:bg-secondary-950 shadow-lg dark:shadow-none w-[250px]">
+        <input type="text" class="form-input" disabled>
+        <div class="card-content grid grid-cols-4 p-0">
+            <div class="bg-dawn-50 -space-x-[1px] -space-y-[1px] dark:bg-secondary-900 grid grid-cols-3 col-span-3">
+                <button class="AC rounded-none px-1 order-1">AC</button>
+                <button class="rounded-none order-1 px-1" value="%">%</button>
+                <button class="rounded-none order-2 px-1" value="^">^</button>
+                <button class="rounded-none order-5 px-1" value="9">9</button>
+                <button class="rounded-none order-4 px-1" value="8">8</button>
+                <button class="rounded-none order-3 px-1" value="7">7</button>
+                <button class="rounded-none order-8 px-1" value="6">6</button>
+                <button class="rounded-none order-7 px-1" value="5">5</button>
+                <button class="rounded-none order-6 px-1" value="4">4</button>
+                <button class="rounded-none order-11 px-1" value="3">3</button>
+                <button class="rounded-none order-10 px-1" value="2">2</button>
+                <button class="rounded-none order-9 px-1" value="1">1</button>
+                <button class="rounded-none order-12 px-1" value=".">.</button>
+                <button class="rounded-none order-[13] col-span-2 px-1" value="0">0</button>
+            </div>
+            <div class="grid grid-cols-1 col-span-1 -space-y-[1px]">
+                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="+">+</button>
+                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="-">-</button>
+                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="*">×</button>
+                <button class="rounded-none border border-dawn-100 dark:border-white/3 px-1" value="/">÷</button>
+                <button class="calculate rounded-none border border-dawn-100 dark:border-white/3 px-1">=</button>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
