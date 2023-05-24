@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import "./remixicon.css";
 @font-face {
   font-family: "Technology";
@@ -6,7 +6,7 @@
 }
 @layer base {
   * {
-    @apply font-[roboto];
+    @apply font-[Inter];
   }
   html {
     @apply dark:[color-scheme:dark];
@@ -21,7 +21,7 @@
     @apply z-50 rounded border border-dawn-100 px-3 py-2 text-center text-xl outline-none dark:border-white/[3%];
   }
   .form-input {
-    @apply z-20 w-full bg-dawn-50 px-3 py-5 font-[Technology] text-title-md outline-none dark:bg-secondary-900 dark:text-primary-500 dark:[text-shadow:0_0_7px_rgba(43,169,253,0.42)];
+    @apply z-20 w-full bg-dawn-50 px-3 py-5 font-[Technology] text-title-md outline-none dark:bg-secondary-900 text-primary-500 dark:[text-shadow:0_0_7px_rgba(43,169,253,0.42)];
   }
   .card {
     @apply relative mx-auto overflow-hidden rounded after:absolute after:start-0
