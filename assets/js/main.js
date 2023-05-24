@@ -12,7 +12,16 @@ calButtons.forEach(button => {
     
         } else if (button.classList.contains("calculate")){
     
-            formInputElement.value = eval(formInputElement.value);
+            if(formInputElement.value.match("[a-z,A-Z]") != null){
+
+                alert("I can't solve this.");
+                formInputElement.value = "";
+                
+            } else {
+
+                formInputElement.value = eval(formInputElement.value);
+
+            }
     
         } else {
     
