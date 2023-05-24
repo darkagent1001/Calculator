@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="assets/scss/tailwind.css">
     <meta charset="UTF-8">
@@ -8,6 +8,13 @@
     <title>Calculator</title>
 </head>
 <body>
+
+    <div class="absolute top-[2%] flex items-center gap-4">
+        <button id="theme-toggler" class="border-0">
+            <i class="ri-contrast-line"></i>
+        </button>
+        <div class="alert invisible">Copied!</div>
+    </div>
     
     <div class="card bg-white dark:bg-secondary-950 shadow-lg dark:shadow-none w-[250px]">
         <div class="relative">
@@ -43,9 +50,8 @@
         </div>
     </div>
 
-    <div class="alert absolute invisible ms-4 top-[2%]">Copied!</div>
-
     <script src="assets/js/main.js"></script>
     <script src="assets/js/copy.js"></script>
+    <script src="assets/js/theme-toggler.js"></script>
 </body>
 </html>
